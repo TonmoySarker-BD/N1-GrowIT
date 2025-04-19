@@ -14,7 +14,7 @@
 
 <body>
   <!-- Header Section -->
-  <header class="fixed top-0 left-0 w-full z-50 px-[5%] bg-[#32ff7e20] shadow-sm backdrop-blur-md">
+  <header class="fixed top-0 left-0 w-full z-50 px-[5%] bg-[#dcfce780] shadow-sm backdrop-blur-md">
     <!-- Navbar Section -->
     <div class="navbar">
       <div class="navbar-start">
@@ -35,20 +35,20 @@
         </div>
         <a href="./index.html" class="text-xl flex items-center">
           <img src="./assets/logo.png" width="50" height="50" alt="">
-          <span class="text-white font-bold text-5xl">GrowIT</span>
+          <span class="text-green-800 font-bold text-5xl">GrowIT</span>
 
         </a>
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal rounded-2xl px-1 text-xl">
-          <li class="text-white hover:bg-[#32ff7e70] font-bold"><a href="./index.html">Home</a></li>
-          <li class="text-white hover:bg-[#32ff7e70] "><a href="./Pages/product.html">Products</a></li>
-          <li class="text-white hover:bg-[#32ff7e70] "><a href="./Pages/about.html">About</a></li>
-          <li class="text-white hover:bg-[#32ff7e70] "><a href="./Pages/faq.html">FAQ</a></li>
+        <ul class="menu menu-horizontal rounded-2xl px-1 text-green-800 text-xl">
+          <li class="hover:bg-[#32ff7e70] font-bold"><a href="./index.html">Home</a></li>
+          <li class="hover:bg-[#32ff7e70] "><a href="./Pages/product.html">Products</a></li>
+          <li class="hover:bg-[#32ff7e70] "><a href="./Pages/about.html">About</a></li>
+          <li class="hover:bg-[#32ff7e70] "><a href="./Pages/faq.html">FAQ</a></li>
         </ul>
       </div>
       <div class="navbar-end  ">
-        <div class="flex flex-col text-sm text-white border-2 border-white rounded-lg px-2 ">
+        <div class="flex flex-col text-sm text-green-800 border-2 border-green-800 rounded-lg px-2 ">
           <p id="time"></p>
           <p id="date"></p>
         </div>
@@ -58,24 +58,278 @@
 
   <!-- Main Section -->
   <main>
+
+    <!-- Banner Section -->
     <div id="hero" class="hero min-h-screen transition-all duration-700 ease-in-out"
       style="background-image: url('./assets/s1.jpg');">
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content text-neutral-content text-center">
         <div class="">
           <h1 class="mb-5 text-5xl font-bold">Smart Tech Meets Smart Farming</h1>
-          <p class="mb-5">Harness the power of modern technology to revolutionize agriculture. From IoT-driven crop monitoring to drone-assisted farming, GrowIT bridges the gap between traditional farming and cutting-edge innovation to boost productivity, sustainability, and growth.
+          <p class="mb-5">Harness the power of modern technology to revolutionize agriculture. From IoT-driven crop
+            monitoring to drone-assisted farming, GrowIT bridges the gap between traditional farming and cutting-edge
+            innovation to boost productivity, sustainability, and growth.
           </p>
-          <button class="btn bg-[#32ff7e70] border-none text-white">Our Products</button>
+          <a href="#product-f"><button class="btn bg-[#32ff7e70] border-none text-white">Our Products</button></a>
         </div>
       </div>
     </div>
 
+    <!-- Product Section -->
+    <section id="product-f" class="my-24 mx-[5%] pt-16">
+      <h2 class="text-3xl text-center font-bold text-green-700 mb-10">🌾 Featured Products</h2>
+
+      <div class=" gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+        <!-- card 1 -->
+        <div class="card bg-base-100 max-w-96 shadow-sm">
+          <figure>
+            <img src="./assets/app.png" alt="GrowIT APP" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Farm Monitoring App</h2>
+            <p>A powerful mobile and web app to track crop health, weather data, and pest activity in real-time.
+              <br><br>
+              <b>Benefit: </b> Improve decision-making and boost yield by staying informed on every inch of your farm.
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Try Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card bg-base-100 max-w-96 shadow-sm">
+          <figure>
+            <img src="./assets/soil.png" alt="IoT Soil Sensor Kit" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">IoT Soil Sensor Kit</h2>
+            <p>Smart sensors that measure soil moisture and pH levels for accurate irrigation and fertilization.
+              <br><br>
+              <b>Benefit: </b> Save water, optimize fertilization, and grow healthier crops with real-time soil data.
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Try Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card bg-base-100 max-w-96 shadow-sm">
+          <figure>
+            <img src="./assets/Fertilizer.png" alt="Organic Fertilizer Pack" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Organic Fertilizer Pack</h2>
+            <p>Eco-friendly fertilizer made from natural compost, ideal for all types of crops. <br><br>
+              <b>Benefit: </b> Enhances soil fertility and boosts plant growth without harming the environment.
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Try Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card bg-base-100 max-w-96 shadow-sm">
+          <figure>
+            <img src="./assets/drone.png" alt="Agro Drone Services" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">IoT Soil Sensor Kit</h2>
+            <p>Professional drone-based spraying and aerial mapping tailored to your farmland. <br><br>
+              <b>Benefit: </b> Cover large areas quickly, reduce manual labor, and get precise field insights.
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Try Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="my-24 mx-[5%] pt-16 text-center">
+      <h2 class="text-3xl font-bold text-green-700 mb-10">What People Say About GrowIT</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto">
+
+        <!-- Farmer Feedback -->
+        <div class="card bg-green-50 shadow-md p-6 border border-green-200">
+          <div class="card-body items-center text-center">
+            <p class="italic text-gray-700">
+              "Using GrowIT’s monitoring tools has completely transformed how I manage my farm. Real-time crop updates
+              save me hours every day."
+            </p>
+            <h4 class="mt-4 font-semibold text-green-800">— Rafiq Ahmed, Farmer</h4>
+          </div>
+        </div>
+
+        <!-- Agritech Partner Feedback -->
+        <div class="card bg-green-50 shadow-md p-6 border border-green-200">
+          <div class="card-body items-center text-center">
+            <p class="italic text-gray-700">
+              "Partnering with GrowIT has enabled us to deploy sensors efficiently and reach more rural communities
+              faster than ever."
+            </p>
+            <h4 class="mt-4 font-semibold text-green-800">— Meera Patel, AgriSense Pvt Ltd</h4>
+          </div>
+        </div>
+
+        <!-- Young Agri-Entrepreneur Feedback -->
+        <div class="card bg-green-50 shadow-md p-6 border border-green-200">
+          <div class="card-body items-center text-center">
+            <p class="italic text-gray-700">
+              "GrowIT helped me launch my tech-enabled vertical farm. The tools are easy to use and incredibly powerful
+              for precision farming."
+            </p>
+            <h4 class="mt-4 font-semibold text-green-800">— Ayaan Malik, Agri-Entrepreneur</h4>
+          </div>
+        </div>
+
+        <!-- Government Support Feedback -->
+        <div class="card bg-green-50 shadow-md p-6 border border-green-200">
+          <div class="card-body items-center text-center">
+            <p class="italic text-gray-700">
+              "GrowIT aligns with our vision of smart, sustainable agriculture. We're proud to support this initiative."
+            </p>
+            <h4 class="mt-4 font-semibold text-green-800">— Dept. of Agriculture Tech, Govt.</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="my-24 mx-[5%] pt-16 text-center">
+      <h2 class="text-3xl font-bold text-green-700 mb-10">Gallery – GrowIT in Action</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto">
+
+        <!-- Gallery Item -->
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/drone.png" alt="Drone spraying over field" class="w-full h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">Drones in Farming</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">Drones in Farming</p>
+        </div>
+
+        <!-- Repeat for each item -->
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/soil.png" alt="IoT Soil Sensor Kit in field" class="w-full h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">Smart Soil Sensors</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">Smart Soil Sensors</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/app.png" alt="Monitoring dashboard UI" class="w-full h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">Monitoring Dashboard</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">Monitoring Dashboard</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/s4.jpg" alt="Traditional vs Smart" class="w-full h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">Traditional vs Smart Farming</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">Traditional vs Smart Farming</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/Fertilizer.png" alt="Happy Growers" class="w-full h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">Happy Growers</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">Happy Growers</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/s1.jpg" alt="GrowIT Team" class="w-full h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">GrowIT Team</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">GrowIT Team</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/s2.jpg" alt="Product in Fields" class="w-full h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">Product in Use</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">Product in Use</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/s3.jpg" alt="Training Event" class="w-full h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">Training & Events</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">Training & Events</p>
+        </div>
+
+      </div>
+    </section>
+
+
   </main>
 
   <!-- Footer Section -->
-  <footer>
+  <footer class="bg-green-100 text-green-900 py-10 px-[5%] mt-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
+      <!-- Brand & Description -->
+      <div>
+        <h2 class="text-2xl font-bold mb-3">GrowIT</h2>
+        <p class="text-sm max-w-sm">
+          Empowering farmers with smart technology for better yields, sustainable practices, and future-ready
+          agriculture.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="./index.html" class="hover:text-green-600">Home</a></li>
+          <li><a href="./Pages/product.html" class="hover:text-green-600">Products</a></li>
+          <li><a href="./Pages/about.html" class="hover:text-green-600">About Us</a></li>
+          <li><a href="./Pages/faq.html" class="hover:text-green-600">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Contact Us</h3>
+        <p class="text-sm mb-2">Email: support@growit.com</p>
+        <p class="text-sm mb-4">Phone: +1 (800) 123-4567</p>
+        <div class="flex space-x-4 text-2xl text-green-800">
+          <a href="#"><i class="ri-facebook-circle-fill hover:text-green-600"></i></a>
+          <a href="#"><i class="ri-twitter-x-line hover:text-green-600"></i></a>
+          <a href="#"><i class="ri-instagram-line hover:text-green-600"></i></a>
+          <a href="#"><i class="ri-linkedin-box-fill hover:text-green-600"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="mt-10 border-t border-green-300 pt-4 text-sm text-center">
+      &copy; 2025 GrowIT. All rights reserved By <a
+        href="https://www.linkedin.com/in/tonmoysarkerbd/">@TonmoySarkerBD</a>.
+    </div>
   </footer>
 
   <script src="./Js/script.js"></script>
