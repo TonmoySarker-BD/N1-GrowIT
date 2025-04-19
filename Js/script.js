@@ -16,13 +16,14 @@ const hero = document.getElementById("hero");
 const backgrounds = [
     "./assets/s4.jpg",
     "./assets/s3.jpg",
-    "./assets/s2.jpg"
+    "./assets/s2.jpg",
+    "./assets/s1.jpg"
 ];
 
 let current = 0;
 
 function updateHeroBackground() {
-    hero.style.backgroundImage = `url('${backgrounds[current]}')`;
+    hero.style.background = `url('${backgrounds[current]}') no-repeat center center/cover`;
     current = (current + 1) % backgrounds.length;
 }
 
