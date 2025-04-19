@@ -14,9 +14,9 @@ updateDateTime();
 const hero = document.getElementById("hero");
 
 const backgrounds = [
-    "../assets/s4.jpg",
-    "../assets/s3.jpg",
-    "../assets/s2.jpg"
+    "./assets/s4.jpg",
+    "./assets/s3.jpg",
+    "./assets/s2.jpg"
 ];
 
 let current = 0;
