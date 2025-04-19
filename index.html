@@ -14,7 +14,7 @@
 
 <body>
   <!-- Header Section -->
-  <header class="px-[5%] bg-[#32ff7e20] shadow-sm">
+  <header class="fixed top-0 left-0 w-full z-50 px-[5%] bg-[#32ff7e20] shadow-sm backdrop-blur-md">
     <!-- Navbar Section -->
     <div class="navbar">
       <div class="navbar-start">
@@ -33,18 +33,22 @@
 
           </ul>
         </div>
-        <a class="text-xl "><img src="./assets/logo.png" width="50" height="50" alt=""></a>
+        <a href="./index.html" class="text-xl flex items-center">
+          <img src="./assets/logo.png" width="50" height="50" alt="">
+          <span class="text-white font-bold text-5xl">GrowIT</span>
+
+        </a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal rounded-2xl px-1 text-xl">
-          <li class="hover:bg-[#32ff7e70] font-bold"><a href="./index.html">Home</a></li>
-          <li class="hover:bg-[#32ff7e70] "><a href="./Pages/product.html">Products</a></li>
-          <li class="hover:bg-[#32ff7e70] "><a href="./Pages/about.html">About</a></li>
-          <li class="hover:bg-[#32ff7e70] "><a href="./Pages/faq.html">FAQ</a></li>
+          <li class="text-white hover:bg-[#32ff7e70] font-bold"><a href="./index.html">Home</a></li>
+          <li class="text-white hover:bg-[#32ff7e70] "><a href="./Pages/product.html">Products</a></li>
+          <li class="text-white hover:bg-[#32ff7e70] "><a href="./Pages/about.html">About</a></li>
+          <li class="text-white hover:bg-[#32ff7e70] "><a href="./Pages/faq.html">FAQ</a></li>
         </ul>
       </div>
       <div class="navbar-end  ">
-        <div class="flex flex-col text-sm border-1 border-[#32ff7e] rounded-lg px-2 bg-[#32ff7e70]">
+        <div class="flex flex-col text-sm text-white border-2 border-white rounded-lg px-2 ">
           <p id="time"></p>
           <p id="date"></p>
         </div>
@@ -54,6 +58,18 @@
 
   <!-- Main Section -->
   <main>
+    <div id="hero" class="hero min-h-screen transition-all duration-700 ease-in-out"
+      style="background-image: url('./assets/s1.jpg');">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="">
+          <h1 class="mb-5 text-5xl font-bold">Smart Tech Meets Smart Farming</h1>
+          <p class="mb-5">Harness the power of modern technology to revolutionize agriculture. From IoT-driven crop monitoring to drone-assisted farming, GrowIT bridges the gap between traditional farming and cutting-edge innovation to boost productivity, sustainability, and growth.
+          </p>
+          <button class="btn bg-[#32ff7e70] border-none text-white">Our Products</button>
+        </div>
+      </div>
+    </div>
 
   </main>
 

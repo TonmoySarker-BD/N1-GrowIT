@@ -7,3 +7,24 @@ function updateDateTime() {
 }
 setInterval(updateDateTime, 1000);
 updateDateTime();
+
+
+
+//  For  Hero section Slide
+const hero = document.getElementById("hero");
+
+const backgrounds = [
+    "../assets/s4.jpg",
+    "../assets/s3.jpg",
+    "../assets/s2.jpg"
+];
+
+let current = 0;
+
+function updateHeroBackground() {
+    hero.style.backgroundImage = `url('${backgrounds[current]}')`;
+    current = (current + 1) % backgrounds.length;
+}
+
+setInterval(updateHeroBackground, 5000);
+updateHeroBackground();
