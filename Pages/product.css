@@ -1,0 +1,11 @@
+.custom-list li {
+    background-color: #e6ffe6;
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: 1px solid #32ff7e;
+    transition: background-color 0.3s ease;
+  }
+  .custom-list li:hover {
+    background-color: #32ff7e90;
+    cursor: pointer;
+  }

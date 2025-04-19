@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrowIT - Smart Tech Meets Smart Farming</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
     <!-- Tailwind CSS + Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./product.css">
 </head>
 
 <body>
@@ -30,7 +33,7 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        class="menu menu-sm dropdown-content bg-green-200 rounded-box z-1 mt-3 w-52 p-2 shadow">
                         <li><a class="hover:bg-[#32ff7e70]" href="../index.html">Home</a></li>
                         <li class="hover:bg-[#32ff7e70] font-bold"><a href="./product.html">Products</a></li>
                         <li class="hover:bg-[#32ff7e70]"><a href="./about.html">About</a></li>
@@ -62,7 +65,110 @@
     </header>
 
     <!-- main Section -->
-    <main>
+    <main class="mt-32">
+
+        <section class="my-12 px-[5%]">
+            <h2 class="text-3xl font-bold text-green-700 text-center mb-10">Our Smart Agriculture Products</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Product Card -->
+                <div class="card hover:bg-green-100 bg-base-100  shadow-xl border border-green-100">
+                    <figure><img src="../assets/app.png" alt="Crop Monitoring Dashboard"
+                            class="max-h-72 w-full object-cover" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-green-800">Crop Monitoring Dashboard</h2>
+                        <p class="text-sm text-gray-600">Web app to track crop health and conditions in real-time.</p>
+                        <p class="text-lg font-semibold text-green-700">Price: ৳99/year</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-success btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat for other products -->
+                <div class="card hover:bg-green-100 bg-base-100 shadow-xl border border-green-100">
+                    <figure><img src="../assets/soil.png" alt="Farm IoT Sensor Kit"
+                            class="max-h-72 w-full object-cover" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-green-800">Farm IoT Sensor Kit</h2>
+                        <p class="text-sm text-gray-600">Monitor soil moisture and pH wirelessly.</p>
+                        <p class="text-lg font-semibold text-green-700">Price: ৳150</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-success btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hover:bg-green-100 bg-base-100 shadow-xl border border-green-100">
+                    <figure><img src="../assets/s4.jpg" alt="Smart Irrigation Controller"
+                            class="max-h-72 w-full object-cover" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-green-800">Smart Irrigation Controller</h2>
+                        <p class="text-sm text-gray-600">Automated water delivery based on weather and sensors.</p>
+                        <p class="text-lg font-semibold text-green-700">Price: ৳120</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-success btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hover:bg-green-100 bg-base-100 shadow-xl border border-green-100">
+                    <figure><img src="../assets/Fertilizer.png" alt="Bio Compost Mix"
+                            class="max-h-72 w-full object-cover" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-green-800">Bio Compost Mix</h2>
+                        <p class="text-sm text-gray-600">Organic compost for soil enrichment and health.</p>
+                        <p class="text-lg font-semibold text-green-700">Price: ৳35/20kg</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-success btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hover:bg-green-100 bg-base-100 shadow-xl border border-green-100">
+                    <figure><img src="../assets/s1.jpg" alt="Satellite Mapping" class="max-h-72 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-green-800">Satellite Crop Mapping</h2>
+                        <p class="text-sm text-gray-600">Subscription-based NDVI crop analysis using satellite images.
+                        </p>
+                        <p class="text-lg font-semibold text-green-700">Price: ৳29/month</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-success btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hover:bg-green-100 bg-base-100 shadow-xl border border-green-100">
+                    <figure><img src="../assets/drone.png" alt="Drone Spraying" class="max-h-72 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-green-800">Drone Spraying Services</h2>
+                        <p class="text-sm text-gray-600">Efficient aerial spraying for pesticides and fertilizers.</p>
+                        <p class="text-lg font-semibold text-green-700">Price: ৳75/hour</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-success btn-sm">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="my-12 px-[5%]">
+            <h3 class="text-2xl font-bold text-green-700 mb-4">Top Benefits of GrowIT Products</h3>
+            <ul class="custom-list text-lg text-gray-700 space-y-2">
+                <li>✔️ Boost crop yield with real-time monitoring</li>
+                <li>✔️ Automate irrigation and save water</li>
+                <li>✔️ Improve soil quality with organic solutions</li>
+                <li>✔️ Get crop insights from satellite and drones</li>
+                <li>✔️ Reduce manual labor and increase efficiency</li>
+            </ul>
+        </section>
+
+
+
 
 
     </main>
